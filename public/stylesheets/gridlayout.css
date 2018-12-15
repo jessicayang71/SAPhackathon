@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 425px);
+}
+
+.wrapper > div {
+    border: 2px solid #392f26;
+    background-color: rgba(233,171,88,.5);
+    color: #0c0412;
+
+    /* centering */
+    display: flex;
+}
+
+.grid-item {
+    /* centering */
+    margin: auto;
+
+    /* child image does not overflow */
+    height: 100%;
+    width: 100%;
+}
+
+/* to identify if we clicked on the a left or right grid */
+.left {}
+.middle {}
+.right {}
+
+/**
+
+      col:  1      2
+    row:
+        |=======|=======|
+        |       |       |
+      1 |   1   |   2   |
+        |       |       |
+        |=======|=======|
+        |       |       |
+      2 |   3   |   4   |
+        |       |       |
+        |=======|=======|
+        |       |       |
+      3 |   5   |   6   |
+        |       |       |
+        |=======|=======|
+        |       |       |
+      4 |   7   |   8   |
+        |       |       |
+        |=======|=======|
+
+*/
+
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.two {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.three {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.four {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.five {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.six {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.seven {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.eight {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.nine {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.ten {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.eleven {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.twelve {
+  grid-column: 3;
+  grid-row: 4;
+}

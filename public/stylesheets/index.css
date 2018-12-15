@@ -1,0 +1,314 @@
+
+@font-face {
+    font-family: "NewTimes";
+    src: url("/fonts/TIMESS__.ttf")
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+div {
+    font-family: "NewTimes";
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.wrapper > div {
+    -webkit-transition: all 200ms;
+}
+
+.grayscale {
+    -webkit-filter: grayscale(1);
+}
+
+#CreateNewPartySection {
+    display: none;
+}
+
+#CreateNewPartySection.active {
+    display: block;
+}
+
+#JoinExistingPartySection {
+    display: none;
+/*    opacity: 0;
+    margin-top: 1em;*/
+}
+
+#JoinExistingPartySection.active {
+    display: block;
+}
+
+#ViewAllCommentsSection {
+    display: none;
+}
+
+#ViewAllCommentsSection.active {
+    display: block;
+}
+
+#AddNewCommentSection {
+    display: none;
+}
+
+#AddNewCommentSection.active {
+    display: block;
+}
+
+#openingSidePanelDialog {
+    padding-top: 0.25em;
+}
+
+#JoinExistingPartyButton, #CreateNewPartyButton, #CreateNewCommentButton, #submit, #ViewAllCommentsButton, .joinButton {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    background-color: #f28b9b;
+    margin-top: 0.25em;
+    text-align: center;
+    cursor: pointer;
+}
+
+#JoinExistingPartyButton:hover, #CreateNewPartyButton:hover, #submit:hover, .joinButton:hover, #ViewAllCommentsButton:hover, #CreateNewCommentButton:hover {
+    filter: brightness(120%);
+}
+
+#ViewAllCommentsButton {
+    background-color: #b9db97
+}
+
+#CreateNewCommentButton {
+    background-color: #b6e6d3
+}
+
+.commentSection {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 1em;
+}
+
+.commentSection > div {
+    font-size: 1.25em;
+    width: 90%;
+}
+
+.commentAuthor {
+    font-weight: bold;
+    padding-left: 2em;
+}
+
+.commentContent {
+    padding-left: 2em;
+}
+
+#CreateNewPartyButton {
+    background-color: #f3f59d;
+}
+
+.buttonText {
+    font-size: 1.5em;
+}
+
+.joinButton {
+    background-color: #f28b9b;
+    font-size: 1em;
+}
+
+#CreateNewPartySection label {
+    padding-left: 2em;
+    padding-top: 0.5em;
+    font-size: 1.25em !important;
+}
+
+#AddNewCommentSection label {
+    padding-left: 2em;
+    padding-top: 0.5em;
+    font-size: 1.25em !important;
+}
+
+.form-control {
+    font-size: 1.25em !important;
+    margin: 0 1em 0 1em !important;
+    width: 90% !important;
+    border-width: 2px !important;
+    border-color: #f28b9b !important;
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+    border-radius: 0 !important;
+    background-color: inherit !important;
+    box-shadow: none !important;
+    outline: none !important;
+    padding: 6px 1em !important;
+}
+
+.input-group-addon {
+    background-color: transparent !important;
+    border: 2px #f28b9b !important;
+    border-radius: 5px !important;
+}
+
+/* JOIN EXISTING GROUP STYLING */
+.timeFromNow {
+    padding-left: 2em;
+}
+
+#JoinExistingPartySection {
+    padding-top: 0.5em;
+}
+
+.listPartySection {
+    border-bottom: 2px solid #f3f59d !important;
+    margin-bottom: 0.25em !important;
+    font-size: 1.25em !important;
+}
+
+.listPartyName {
+    padding-left: 2em;
+    font-weight: bold;
+}
+
+.listStartTime {
+    padding-left: 2em;
+
+}
+
+.listAttendees {
+    padding-left: 2em;
+
+}
+
+.listPartySize {
+    padding-left: 2em;
+}
+
+/* LOGIN SCREEN */
+
+/*  most outer div
+    this takes up the entire body  */
+#login_wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+
+    z-index: 20;
+
+    background: radial-gradient(#110703, #6b4c20);
+    opacity: 0.97;
+}
+
+/* horizontal centering */
+#login_wrapper .center{
+    margin: auto;
+    width: 50%;
+}
+
+/*  inner div background
+    to turn into circle   */
+#login_wrapper #square{
+    opacity: 0;
+    width: 500px;
+    height: 500px;
+    background: #eec06b;
+    z-index: 20;
+}
+
+/* text alignment for header */
+#login_wrapper h1, #login_wrapper h3{
+    font-weight: bold;
+    text-align: center;
+}
+
+#login_wrapper #header{
+    position: relative;
+    top: 10px;
+}
+
+#login_wrapper #email-header{
+    position: relative;
+    top: 7px;
+}
+
+/* vertical centering */
+#login_wrapper .middle-div {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#login_wrapper #nicknameForm{
+    visibility: hidden;
+    opacity: 0;
+}
+
+#login_wrapper input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-size: 1.25em;
+    border: none;
+    background-color: #c19975;
+
+    background-position: 5px 7px;
+    background-repeat: no-repeat;
+
+    /* css shorthand: top, right, left, bottom */
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+#login_wrapper input[type=text]:focus {
+    width: 250px;
+}
+
+#login_wrapper input:focus{
+    outline: none;
+}
+
+#login_wrapper .button{
+    border-radius: 30px;
+    border: none;
+    background: #c19975;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+/* changing placeholder colour */
+#login_wrapper ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #c19975;
+    letter-spacing: 1px;
+}
+#login_wrapper :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #c19975;
+    opacity:  1;
+    letter-spacing: 1px;
+}
+#login_wrapper ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #c19975;
+    opacity:  1;
+    letter-spacing: 1px;
+}
+#login_wrapper :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #c19975;
+    letter-spacing: 1px;
+}
+

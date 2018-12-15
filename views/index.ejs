@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= title %></title>
+
+<link rel='stylesheet' href='/stylesheets/index.css'>
+<link rel='stylesheet' href='/stylesheets/gridlayout.css'>
+<link rel='stylesheet' href='/stylesheets/sideBar.css'>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Date Picker -->
+<link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+
+</head>
+<body>
+
+<div id="login_wrapper">
+    <div id="square" class="center">
+        <div id="nicknameForm" class="middle-div text-center">
+            <h1>SAP - Lunch With Us</h1>
+            <h3>Enter a nickname</h3>
+            <input type="text" id="username" placeholder="nickname..." maxlength="32">
+
+            <!--br>
+            <div style="visibility: hidden; font-size: 4px">block</div-->
+
+            <input type="submit" id="validate-email" class="button" value="enter">
+
+            <br>
+            <div style="visibility: hidden; font-size: 5px">block</div>
+        </div>
+    </div>
+</div>
+
+<div class="sidebar_wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar" class="active">
+        <div class="sidebar-header">
+        </div>
+
+        <div id="openingSidePanelDialog">
+            <div id="JoinExistingPartyButton">
+                <div class="buttonText">Join Existing Group</div>
+            </div>
+            <div id="CreateNewPartyButton">
+                <div class="buttonText">Create New Group</div>
+            </div>
+            <div id="ViewAllCommentsButton">
+                <div class="buttonText">View All Reviews</div>
+            </div>
+            <div id="CreateNewCommentButton">
+                <div class="buttonText">Add New Reviews</div>
+            </div>
+        </div>
+
+        <div id="JoinExistingPartySection">
+        </div>
+
+        <div id="CreateNewPartySection">
+            <form>
+                <div class="form-group">
+                    <label for="host">Host</label>
+                    <input type="text" name="host" class="form-control" id="host" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="partyName">Group Name</label>
+                    <input type="text" name="partyName" class="form-control" id="partyName" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="startTime">Start Time</label>
+                    <div class='input-group date' id='datetimepicker1'>
+                        <input type='text' class="form-control" id="time"/>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="attendees">Attendees</label>
+                    <input type="text" name="attendees" class="form-control" id="attendees" placeholder="">
+                </div>
+                <div id="submit" type="submit" class="submitForm">
+                    <div class="buttonText">Submit</div>
+                </div>
+            </form>
+        </div>
+
+        <div id="ViewAllCommentsSection">
+            <h4>All Comments</h4>
+        </div>
+
+        <div id="AddNewCommentSection">
+            <form>
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" name="author" class="form-control" id="author" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="content">Content</label>
+                    <input type="text" name="commentContent" class="form-control" id="commentContent" placeholder="">
+                </div>
+                <div id="submit" type="submit" class="submitComment">
+                    <div class="buttonText">Submit</div>
+                </div>
+            </form>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper">
+    <div class="one left" id="A&W">
+        <div class="grid-item">
+            <img src="/images/A&W.png">
+
+        </div>
+    </div>
+
+    <div class="two middle" id="Cactus Club Cafe">
+        <div class="grid-item">
+            <img src="/images/cactus.png">
+
+        </div>
+    </div>
+
+    <div class="three right" id="Gong Cha">
+        <div class="grid-item">
+            <img src="/images/gongcha.png">
+
+        </div>
+    </div>
+
+    <div class="four left" id="Marutama">
+        <div class="grid-item">
+            <img src="/images/marutama.jpg">
+
+        </div>
+    </div>
+
+    <div class="five middle" id="McDonalds">
+        <div class="grid-item">
+            <img src="/images/mcds.png">
+
+        </div>
+    </div>
+
+    <div class="six right" id="Minami">
+        <div class="grid-item">
+            <img src="/images/minami.png">
+
+        </div>
+    </div>
+
+    <div class="seven left" id="Rain Or Shine">
+        <div class="grid-item">
+            <img src="/images/RainOrShin.jpg">
+
+        </div>
+    </div>
+
+    <div class="eight middle" id="Starbucks">
+        <div class="grid-item">
+            <img src="/images/starbucks.jpg">
+
+        </div>
+    </div>
+
+    <div class="nine right" id="Tacofino">
+        <div class="grid-item">
+            <img src="/images/tacofino.jpg">
+
+        </div>
+    </div>
+
+    <div class="ten left" id="The Keg">
+        <div class="grid-item">
+            <img src="/images/thekeg.JPG">
+
+        </div>
+    </div>
+
+    <div class="eleven middle" id="Yaletown Brewery Company">
+        <div class="grid-item">
+            <img src="/images/ybc.jpg">
+
+        </div>
+    </div>
+
+    <div class="twelve right" id="Flying Pig">
+        <div class="grid-item">
+            <img src="/images/fly pig.png">
+
+        </div>
+    </div>
+</div>
+
+<script src="/javascripts/jQuery331.js"></script>
+
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+<!-- For Date Picker -->
+<script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>
+<script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+<!-- jQuery transform -->
+<script src="/javascripts/jQueryTransform.js"></script>
+
+<!-- index.js -->
+<script src="/javascripts/index.js"></script>
+</body>
+</html>
